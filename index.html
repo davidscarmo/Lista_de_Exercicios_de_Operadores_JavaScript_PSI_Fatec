@@ -10,15 +10,68 @@
         <script type="text/javascript">
             
             function exe1(){
-                var n1 = prompt("Informe a nota 1: ");
-                var n2 = prompt("Informe a nota 2: ");
-                var n3 = prompt("Informe a nota 3: ");
-                var n4 = prompt("Informe a nota 4: ");   
+                var n1,n2,n3,n4;
                 
-                n1 = parseInt(n1);
-                n2 = parseInt(n2);
-                n3 = parseInt(n3);
-                n4 = parseInt(n4);
+                for(i = 1; i == 1; i++)
+                {
+                 n1 = prompt("Informe a nota 1: ");
+                 n1 = parseFloat(n1);
+                    try {
+                                if(isNaN(n1)) throw  msg =  "não é um número!";
+        
+                            }
+                            catch(err) {
+                                alert("O dado inserido " + msg + "\nInforme apenas números!");
+                                
+                                i -= 1;
+                            }
+                  
+                } 
+                 
+                for(i = 1; i == 1; i++){
+                    n2 = prompt("Informe a nota 2: ");
+                    n2 = parseFloat(n2);
+                    try {
+                                if(isNaN(n2)) throw  msg =  "não é um número!";
+        
+                            }
+                            catch(err) {
+                                alert("O dado inserido " + msg + "\nInforme apenas números!");
+                                
+                                i -= 1;
+                            }
+                  
+                        } 
+            
+                 for(i = 1; i == 1; i++){
+                       n3 = prompt("Informe a nota 3: ");
+                       n3 = parseFloat(n3);
+                    try {
+                                if(isNaN(n3)) throw  msg =  "não é um número!";
+        
+                            }
+                            catch(err) {
+                                alert("O dado inserido " + msg + "\nInforme apenas números!");
+                                
+                                i -= 1;
+                            }
+                  
+                        } 
+                 for(i = 1; i == 1; i++){
+                       n4 = prompt("Informe a nota 4: ");
+                       n4 = parseFloat(n4);
+                    try {
+                                if(isNaN(n4)) throw  msg =  "não é um número!";
+        
+                            }
+                            catch(err) {
+                                alert("O dado inserido " + msg + "\nInforme apenas números!");
+                                
+                                i -= 1;
+                            }
+                  
+                        } 
+                
                 
                 var mediaF = (n1 + n2 + n3 + n4) / 4;
                 console.log(mediaF);
@@ -46,10 +99,40 @@
             }
             
             function exe2(){
-                  var n1 = prompt("Informe um número: ");
-                  n1 = parseInt(n1);
-                  var n2 = prompt("Informe outro número: ");
-                  n2 = parseInt(n2);
+                var n1 = 0,
+                    n2 = 0; 
+                for(i = 1; i == 1; i++)
+                {
+                  n1 = prompt("Informe um número: ");
+                    n1 = parseFloat(n1);
+                  try {
+                                if(isNaN(n1)) throw  msg =  "não é um número!";
+        
+                            }
+                            catch(err) {
+                                alert("O dado inserido " + msg + "\nInforme apenas números!");
+                                
+                                i -= 1;
+                            }
+                  
+                 } 
+                for(j = 1; j == 1; j++)
+                {
+                  n2 = prompt("Informe outro número: ");
+                   n2 = parseFloat(n2);
+                    try {
+                                if(isNaN(n2)) throw  msg =  "não é um número!";
+        
+                            }
+                            catch(err) {
+                                alert("O dado inserido " + msg + "\nInforme apenas números!");
+                                
+                                j -= 1;
+                            }
+                    
+                }
+                
+                
                 if(n1 > n2)
                     {
                         alert("A diferença do maior número pro menor é " + (n1 - n2));
@@ -63,13 +146,55 @@
             }
             
             function exe4(){
-                var n1 = prompt("Informe a nota 1: ");
-                var n2 = prompt("Informe a nota 2: ");
-                var n3 = prompt("Informe a nota 3: "); 
+                var n1 = 0, n2 = 0, n3 = 0;
+                for(i = 1; i == 1; i++)
+                {
+                 n1 = prompt("Informe a nota 1: ");
+                 n1 = parseFloat(n1);
+                    try {
+                                if(isNaN(n1)) throw  msg =  "não é um número!";
+        
+                            }
+                            catch(err) {
+                                alert("O dado inserido " + msg + "\nInforme apenas números!");
+                                
+                                i -= 1;
+                            }
+                  
+                } 
+                 
+                for(i = 1; i == 1; i++){
+                    n2 = prompt("Informe a nota 2: ");
+                    n2 = parseFloat(n2);
+                    try {
+                                if(isNaN(n2)) throw  msg =  "não é um número!";
+        
+                            }
+                            catch(err) {
+                                alert("O dado inserido " + msg + "\nInforme apenas números!");
+                                
+                                i -= 1;
+                            }
+                  
+                        } 
+            
+                 for(i = 1; i == 1; i++){
+                       n3 = prompt("Informe a nota 3: ");
+                       n3 = parseFloat(n3);
+                    try {
+                                if(isNaN(n3)) throw  msg =  "não é um número!";
+        
+                            }
+                            catch(err) {
+                                alert("O dado inserido " + msg + "\nInforme apenas números!");
+                                
+                                i -= 1;
+                            }
+                  
+                        } 
                 
-                n1 = parseInt(n1);
-                n2 = parseInt(n2);
-                n3 = parseInt(n3);
+                
+              
                 
                 var mediaF = (n1 + n2 + n3) / 3;
                 console.log(mediaF);
@@ -88,29 +213,56 @@
             }
             
             function exe5(){
-                var i = 0; 
-                var maiorId = 0; 
-                for(i = 1; i < 11; i++){
-                    var id = prompt("Informe a sua idade: ");
+                var i = 0, 
+                    maiorId = 0, 
+                    msg = "",
+                    id = 0,
+                    aux = 10;
+            
+                for(i = 1; i <= aux; i++){
+                    
+                    id = prompt("Informe a sua idade: ");
+            
+                    try {
+                            if(isNaN(id)) throw  msg =  "não é um número!";
+                            if(id < 0) throw msg = "é um número negativo";
+        
+                        }
+                    catch(err) 
+                        {
+                            alert("O dado inserido " + msg + "\n Informe apenas idade em números inteiros positivos!");
+                            aux += +1;
+                        }
                     
                     if(id >= 18){
                         maiorId += 1; 
                     }
                 }
                 alert(maiorId + " são maiores de idade!");
-            }
+            } 
             
             function exe6(){
                 var i = 0,
                 num = 0,
                 maior = null,
                 menor = null, 
-                aux = 0;
+                aux = 0,
+                msg = "";
                 
                 for(i = 1; i != 0; )
                     {
                        num = prompt("informe um número positivo: \n Para encerrar digite 0: ");
                         num = parseInt(num);
+                         try {
+                                if(isNaN(num)) throw  msg =  "não é um número!";
+                                num = Number(num);
+                                if(num < 0) throw msg = "é um número menor que 0";
+        
+                            }
+                            catch(err) {
+                                alert("O dado inserido " + msg + "\nInforme apenas números positivos (maiores que 0) !");
+                            }
+                        
                        if(aux == 0 && num > 0){
                            maior = num;
                            menor = num;
@@ -127,11 +279,9 @@
                                 console.log("Menor: " + menor);
                             }
                         }
-                        else if(num < 0){
-                            alert("Informe apenas números positivos!");
-                        }
                         else if(num == 0){
                             i = 0; 
+                            alert("O programa será encerrado!");
                         }
                     }
                 alert("O maior número foi " + maior + "\n E o menor foi " + menor);
@@ -146,20 +296,56 @@
                     sex = "",
                     maior = null,
                     menor = null, 
-                    aux = 0;
+                    aux = 1,
+                    aux2= 1,
+                    msg = "";
             
                 
                 for(i = 1; i <= 15; i++){
-                    sex = prompt("Informe o seu sexo: 'M' ou 'F' ");
-                    alt = prompt("Informe a sua altura: ");
-                    alt = parseFloat(alt);
-                    console.log(alt);
+                    
+                    for(j = 1; j <= aux; j++)
+                    {
+                        sex = prompt("Informe o seu sexo: 'M' ou 'F' ");
+                        try {
+                                if(sex == "") throw  msg =  "Dados vazios";
+                                if(sex != "F" && sex != "f" && sex != "M" && sex != "m") throw msg = "Dados inválidos!"
+
+                            }
+                        catch(err) 
+                            {
+                                alert(msg + "\n Informe apenas 'F' ou 'M'!");
+                                aux += +1; 
+                            }
+                    }
+                    aux = 1;
+                    
+                    
+                    if(sex == "F" || sex == "f" || sex == "M" || sex == "m")
+                    {
+                        for(j = 1; j <= aux; j++){
+                        alt = prompt("Informe a sua altura: ");
+                        alt = parseFloat(alt);
+                        try {
+                                if(isNaN(alt)) throw  msg =  "não é um número!";
+                                if(alt < 0) throw msg = "é um número negativo";
+
+                            }
+                                catch(err) 
+                            {
+                                alert("O dado inserido " + msg + "\n Informe apenas idade em números inteiros positivos!");
+                                 aux += 1;
+                            }
+                        
+                        console.log(alt);
+                    }
+                    }
+                     aux = 1;
                     //Início - Verificação Maior e Menor do Grupo 
                     
-                    if(aux == 0 && alt > 0){
+                    if(aux2 == 1 && alt > 0){
                            maior = alt;
                            menor = alt;
-                           aux =1; 
+                           aux2 +=1 ; 
                        }
                     if(alt > 0){
                             if(alt > maior){
@@ -199,16 +385,42 @@
                     medIdOti = 0, 
                     qtdOti = 0,
                     qtdReg = 0,
-                    porBom = 0,
-                    i = 0; 
+                    porBom = 0;
+                
                 for(i = 1; i <= 15; i++)
                 {
-                    id = prompt("Informe a sua idade: ");
-                    op = prompt("O que achou do filme? \n 1 - Regular\n 2 - Bom\n 3 - Ótimo\n:  ");
+                    for(j = 1; j == 1; j++)
+                    {
+                        id = prompt("Informe a sua idade: ");
+                        id = parseInt(id);
+                        try {
+                                if(isNaN(id)) throw  msg =  "não é um número!";
+                                if(id < 0) throw msg = "é um número negativo";
+
+                            }
+                        catch(err) 
+                            {
+                                alert("O dado inserido " + msg + "\n Informe apenas idade em números inteiros positivos!");
+                                aux += +1;
+                                j -= 1;
+                            }
+                    }
                     
-                    id = parseInt(id);
-                    op = parseInt(op);
-                    
+                    for(k = 1; k == 1; k++)
+                    {
+                        op = prompt("O que achou do filme? \n 1 - Regular\n 2 - Bom\n 3 - Ótimo\n:  ");
+                        op = parseInt(op);
+                        try {
+                            if(isNaN(op)) throw  msg =  "não é um número!";
+                            if(op < 1 || op > 3) throw msg = "não é um número válido";
+        
+                            }
+                        catch(err) 
+                            {
+                                alert("O dado inserido " + msg + "\n Informe apenas 1,2 ou 3!");
+                                aux += +1;
+                            }
+                    }
                     if(op == '3')
                         {
                             medIdOti += id;
@@ -239,28 +451,38 @@
                 var num = 0, 
                     primo = 0,
                     par = 0,
-                    i = 0; 
+                    aux = 10;
                 
-                    for(i = 1; i <= 10; i++){
+                    for(i = 1; i <= aux; i++){
                         num = prompt("Informe um número: ");
                         num = parseInt(num); 
-                        
-                        if(num % 2 == 0){
-                            par += num; 
-                            console.log(par);
-                        }   
-                        
-                        if(num %2 == 0 || num % 3 == 0 || num == 1){
-                            if(num == 2){
-                                primo += + num; 
-                            }
-                            else if (num == 3){
-                                primo += +num;
-                            }
+                        try{
+                            if(isNaN(num)) throw msg = "não é um número!";
                         }
-                        else{
-                            primo += +num;
-                            console.log(primo);
+                        catch(err){
+                            alert("O dado informado "+ msg + "\n Informe apenas números reais!")
+                            aux += +1;
+                        }
+                        console.log(num);
+                        if(isNaN(num) == false)
+                        {
+                            if(num % 2 == 0){
+                                par += num; 
+                                console.log(par);
+                            }   
+
+                            if(num %2 == 0 || num % 3 == 0 || num == 1){
+                                if(num == 2){
+                                    primo += + num; 
+                                }
+                                else if (num == 3){
+                                    primo += +num;
+                                }
+                            }
+                            else{
+                                primo += +num;
+                                console.log(primo);
+                            }
                         }
                     }
                     alert("Total da soma dos números pares: " + par);
@@ -274,17 +496,59 @@
                     id = 0,
                     medIdaHom = 0,
                     peso = 0,
-                    medPesMul = 0,  
-                    i = 0;
+                    medPesMul = 0,
+                    aux = 1;
                 
-                    for(i = 1; i <= 15; i++)
+                    for(i = 1; i <= 10; i++)
                     {
-                        sex = prompt("Informe o seu sexo 'M' ou 'F': ");
-                        id = prompt("Informe a sua idade: ");
-                        peso = prompt("Informe o seu peso: ");
+                        for(j = 1; j <= aux; j++)
+                        {
+                            sex = prompt("Informe o seu sexo 'M' ou 'F': ");
+                            try {
+                                if(sex == "") throw  msg =  "Dados vazios";
+                                if(sex != "F" && sex != "f" && sex != "M" && sex != "m") throw msg = "Dados inválidos!"
+
+                            }
+                            catch(err) 
+                            {
+                                alert(msg + "\n Informe apenas 'F' ou 'M'!");
+                                aux += 1;
+                            }
+                        }
+                        aux  = 1;
                         
-                        id = parseInt(id);
-                        peso = parseFloat(peso);
+                        for(k = 1; k <= aux; k++)
+                        {
+                            id = prompt("Informe a sua idade: ");
+                            id = parseInt(id);
+                            try {
+                                if(isNaN(id)) throw  msg =  "não é um número!";
+                                if(id < 0) throw msg = "é um número negativo";
+
+                            }
+                                catch(err) 
+                            {
+                                alert("O dado inserido " + msg + "\n Informe apenas idade em números inteiros positivos!");
+                                 aux += 1;
+                            }
+                        }
+                        aux  = 1;
+                        
+                        for(l = 1; l <= aux; l++){
+                            peso = prompt("Informe o seu peso: ");
+                            peso = parseFloat(peso);
+                             try {
+                                if(isNaN(peso)) throw  msg =  "não é um número!";
+                                if(peso < 0) throw msg = "é um número negativo";
+
+                            }
+                                catch(err) 
+                            {
+                                alert("O dado inserido " + msg + "\n Informe apenas idade em números inteiros positivos!");
+                                 aux += 1;
+                            }
+                        }
+                        aux  = 1;
                         if(sex == 'M' || sex == 'm')
                         {
                             totalH += +1;
@@ -297,7 +561,13 @@
                         }
                     }
                 medIdaHom = medIdaHom/totalH; 
+                if(isNaN(medIdaHom))
+                    medIdaHom = "Não foram informados valores para os homens"; 
+                
                 medPesMul = medPesMul/totalM;
+                if(isNaN(medPesMul)){
+                    medPesMul = "Não foram informados valores para as mulheres";
+                }
                 
                 alert("O total de homens é: " + totalH + "\n O total de Mulheres é: " + totalM);
                 alert("A média de idade dos homens é de: " + medIdaHom); 
@@ -311,7 +581,7 @@
         <button onclick="exe3()"> Exercício 3</button>
         <button onclick="exe4()"> Exercício 4</button>
         <button onclick="exe5()"> Exercício 5</button>
-        <button onclick="exe6()"> Exercício 6</button>
+        <button onclick="exe6()"> Exercício 6</button> 
         <button onclick="exe7()"> Exercício 7</button>
         <button onclick="exe8()"> Exercício 8</button>
         <button onclick="exe9()"> Exercício 9</button>
